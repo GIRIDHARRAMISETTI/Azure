@@ -1,0 +1,37 @@
+{
+	"name": "DestinationAzureSynapseAnalyticsTable",
+	"properties": {
+		"description": "Destination - Azure Synapse Analytics Table",
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalyticsDestination",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "Postid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "PostType",
+				"type": "varchar"
+			},
+			{
+				"name": "comments",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "likes",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "housepost"
+		}
+	}
+}
