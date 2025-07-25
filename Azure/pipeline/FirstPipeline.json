@@ -4,7 +4,8 @@
 		"description": "First Pipeline - Blob to Synapse copy data. ",
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy data",
+				"description": "Copy data from Blob to DataWareHouse(Synapse)",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -48,7 +49,7 @@
 								},
 								"sink": {
 									"name": "Postid",
-									"type": "int"
+									"type": "Int32"
 								}
 							},
 							{
@@ -58,7 +59,7 @@
 								},
 								"sink": {
 									"name": "PostType",
-									"type": "varchar"
+									"type": "String"
 								}
 							},
 							{
@@ -68,7 +69,7 @@
 								},
 								"sink": {
 									"name": "comments",
-									"type": "int"
+									"type": "Int32"
 								}
 							},
 							{
@@ -78,7 +79,7 @@
 								},
 								"sink": {
 									"name": "likes",
-									"type": "int"
+									"type": "Int32"
 								}
 							}
 						]
