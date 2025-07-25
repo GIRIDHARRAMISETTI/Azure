@@ -37,6 +37,51 @@
 							"referenceName": "AzureBlobStorageSource",
 							"type": "LinkedServiceReference"
 						}
+					},
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Post_id",
+									"type": "Int64"
+								},
+								"sink": {
+									"name": "Postid",
+									"type": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "Post_Type",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PostType",
+									"type": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "comments",
+									"type": "Int64"
+								},
+								"sink": {
+									"name": "comments",
+									"type": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "likes",
+									"type": "Int64"
+								},
+								"sink": {
+									"name": "likes",
+									"type": "int"
+								}
+							}
+						]
 					}
 				},
 				"inputs": [
