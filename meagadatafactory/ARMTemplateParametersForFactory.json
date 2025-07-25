@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "meagadatafactory"
+		},
+		"AzureBlobStorageSource_connectionString": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsDestination_password": {
+			"value": ""
+		},
+		"AzureSynapseAnalyticsDestination_properties_typeProperties_server": {
+			"value": "megasqldwserver.database.windows.net"
+		},
+		"AzureSynapseAnalyticsDestination_properties_typeProperties_database": {
+			"value": "MegaSQLDW"
+		},
+		"AzureSynapseAnalyticsDestination_properties_typeProperties_userName": {
+			"value": "sqldwadmin"
+		}
+	}
+}
