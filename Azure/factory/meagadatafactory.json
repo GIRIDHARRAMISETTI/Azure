@@ -1,0 +1,9 @@
+{
+	"name": "meagadatafactory",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8a8b0af3-1a90-4dca-aa87-74a5048c09ae",
+		"tenantId": "9ad77731-08fa-4173-9473-2a442a42e8b1"
+	}
+}
