@@ -1,0 +1,42 @@
+{
+	"name": "SourceDelimitedTextFile",
+	"properties": {
+		"description": "Source Delimited Text File",
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageSource",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "posts.csv",
+				"folderPath": "houselist",
+				"container": "megasales"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Post_id",
+				"type": "String"
+			},
+			{
+				"name": "Post_Type",
+				"type": "String"
+			},
+			{
+				"name": "comments",
+				"type": "String"
+			},
+			{
+				"name": "likes",
+				"type": "String"
+			}
+		]
+	}
+}
